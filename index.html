@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Words From Her Heart</title>
+<title>IWRITE – Words From Her Heart</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google Font -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
@@ -37,7 +37,7 @@ header {
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 44px;
     margin-bottom: 10px;
     color: var(--accent);
 }
@@ -47,50 +47,46 @@ header p {
     font-size: 16px;
 }
 
-/* Writing Card */
-.writing {
+/* Section Card */
+.section {
     background: var(--card);
-    max-width: 800px;
+    max-width: 900px;
     margin: 30px auto;
     padding: 40px;
     border-radius: 14px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.06);
 }
 
-.writing h2 {
+.section h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
 
-.date {
+/* PDF Links */
+.pdf-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.pdf-item:last-child {
+    border-bottom: none;
+}
+
+.pdf-item a {
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 16px;
+}
+
+.pdf-item span {
     font-size: 13px;
     color: var(--muted);
-    margin-bottom: 20px;
-}
-
-.writing p {
-    font-size: 16px;
-    white-space: pre-line;
-}
-
-/* PDF link */
-.pdf-link {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background: var(--accent);
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-/* Image writing */
-.writing img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
 /* Footer */
@@ -106,9 +102,14 @@ footer {
     header h1 {
         font-size: 32px;
     }
-    .writing {
+    .section {
         padding: 25px;
         margin: 20px;
+    }
+    .pdf-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 }
 </style>
@@ -117,45 +118,54 @@ footer {
 <body>
 
 <script>
-// Disable right click & text selection
+// Basic content protection
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('selectstart', e => e.preventDefault());
 </script>
 
 <header>
-    <h1>Words From Her Heart</h1>
-    <p>Original writings • Thoughts • Feelings</p>
+    <h1>IWRITE</h1>
+    <p>Original Poems • Essays • Stories</p>
 </header>
 
-<!-- WRITING START -->
-<div class="writing">
-    <h2>First Poem Title</h2>
-    <div class="date">Written on: 12 July 2025</div>
-    <p>
-This is where your mother’s writing goes.
-Each line feels like a page from her soul.
-Let words flow freely and gently.
-    </p>
+<!-- POEMS -->
+<div class="section">
+    <h2>🌸 Poems</h2>
+
+    <div class="pdf-item">
+        <a href="poems/mother-poem-1.pdf" target="_blank">Poem One Title</a>
+        <span>PDF</span>
+    </div>
+
+    <div class="pdf-item">
+        <a href="poems/mother-poem-2.pdf" target="_blank">Poem Two Title</a>
+        <span>PDF</span>
+    </div>
 </div>
 
-<!-- PDF EXAMPLE -->
-<div class="writing">
-    <h2>Short Story Collection</h2>
-    <div class="date">PDF Book</div>
-    <a href="story.pdf" class="pdf-link" target="_blank">📄 Read Full Book</a>
+<!-- ESSAYS -->
+<div class="section">
+    <h2>📝 Essays</h2>
+
+    <div class="pdf-item">
+        <a href="essays/life-thoughts.pdf" target="_blank">Life & Reflections</a>
+        <span>PDF</span>
+    </div>
 </div>
 
-<!-- IMAGE / HANDWRITTEN -->
-<div class="writing">
-    <h2>Handwritten Thoughts</h2>
-    <div class="date">Scanned Page</div>
-    <img src="handwriting.jpg" alt="Handwritten writing">
+<!-- STORIES -->
+<div class="section">
+    <h2>📖 Stories</h2>
+
+    <div class="pdf-item">
+        <a href="stories/short-story-1.pdf" target="_blank">The Silent Path</a>
+        <span>PDF</span>
+    </div>
 </div>
-<!-- WRITING END -->
 
 <footer>
-    © 2025 • All writings belong to the author.  
-    <br>Unauthorized copying, reproduction or distribution is prohibited.
+    © 2025 IWRITE<br>
+    All writings belong to the author. Unauthorized use is prohibited.
 </footer>
 
 </body>
