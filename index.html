@@ -47,6 +47,18 @@ header p {
     font-size: 16px;
 }
 
+/* Instagram Button */
+.insta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
 /* Section Card */
 .section {
     background: var(--card);
@@ -126,6 +138,13 @@ document.addEventListener('selectstart', e => e.preventDefault());
 <header>
     <h1>I-WRITE</h1>
     <p>Original Poems • Essays • Stories</p>
+
+    <!-- Instagram Link (REPLACE USERNAME) -->
+    <a href="https://www.instagram.com/krupa_writes" 
+       target="_blank" 
+       class="insta-btn">
+       📸 Follow on Instagram
+    </a>
 </header>
 
 <!-- POEMS -->
@@ -141,9 +160,9 @@ document.addEventListener('selectstart', e => e.preventDefault());
         <a href="poems/poem2.pdf" target="_blank">આત્મસુધારણા</a>
         <span>PDF</span>
     </div>
-    
+
     <div class="pdf-item">
-        <a href="poems/poem3.pdf" target="_blank">ઝંખનાા</a>
+        <a href="poems/poem3.pdf" target="_blank">ઝંખના</a>
         <span>PDF</span>
     </div>
 </div>
@@ -153,8 +172,9 @@ document.addEventListener('selectstart', e => e.preventDefault());
     <h2>📝 Essays</h2>
 
     <div class="pdf-item">
-        <a href="essays/life-thoughts.pdf" target="_blank">COMING SOON...</a>
-        <!-- <span>PDF</span> -->
+        <a href="#" style="pointer-events:none; color:gray;">
+            COMING SOON...
+        </a>
     </div>
 </div>
 
